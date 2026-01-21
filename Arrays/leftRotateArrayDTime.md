@@ -7,7 +7,8 @@ Given an integer array nums, rotate the array to the right by k steps, where k i
 reversing by part by part.
 
 ## Code
-class Solution {
+```java
+(class Solution {
     public void rotate(int[] arr, int rotateValue) {
         int size = arr.length;
         int d = rotateValue % size;
@@ -32,4 +33,4 @@ class Solution {
         // }
         
     }
-}
+})
