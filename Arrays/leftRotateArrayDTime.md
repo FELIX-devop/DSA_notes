@@ -4,7 +4,7 @@
 Given an integer array nums, rotate the array to the right by k steps, where k is non-negative.
 
 ## Approach
-reversing by part by part.
+ using copy of temp array also we can use reverse part by part method.like leet code 189
 
 ## Code
 ```java
