@@ -15,6 +15,9 @@ Explanation: 2 and 4 are the only common elements.
 a and b rendu array.b array oda same size la visiting array create pannaum like duplicate varama irka athula once visit panita from 0 to 1 ah flag pannanum.
 if(list.size()==0 || arr1[i]!=list.get(list.size()-1)) intha check last ah array la duplicate join aga koodathu example {1,2,3,} list la next 3 add aga koodathu so list.size-1 pani last element kadachirum so last elemt is 3 and current element is 3 so list add panna koodathu.
 
+## Approach OP
+same as BF use the two pointer.i and j as pointer.if i and j has same value add in list and inrement both pointer else increase i pointer if j is greater than i.increase j pointer if j is lesser than i.
+
 
 
 ## Code
@@ -54,6 +57,35 @@ if(list.size()==0 || arr1[i]!=list.get(list.size()-1)) intha check last ah array
 
 
 })
+
+
+
+# op code
+
+class Solution {
+    public ArrayList<Integer> intersection(int arr1[], int arr2[]) {
+        int size1 = arr1.length;
+        int size2 = arr2.length;
+        int i = 0;
+        int j = 0;
+        ArrayList<Integer> list = new ArrayList<>();
+        while(i!=size1 && j != size2){
+            if(arr1[i]==arr2[j]){
+                if(list.size() == 0 || arr1[i]!=list.get(list.size()-1)){
+                     list.add(arr1[i]);
+                     i++;
+                }    j++;
+            }
+            else if(arr1[i]<arr2[j]){
+                i++;
+            }
+            else{
+                j++;
+            }
+        }return list;
+    }
+}
+
 
 
 
