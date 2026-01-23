@@ -12,6 +12,9 @@ Explanation: The largest element of the array is 35 and the second largest eleme
 ## Approach BF
 Array sort pannanum so largest elemnet last la irukum now loop ah last leruthu reverse la run panitu condition vachi second largest element edukanum.
 
+## Approach OP
+first max update aachuna kandipa first match oda old value second max ah irukum.
+
 ## Code
 ```java
 (class Solution {
@@ -31,6 +34,28 @@ Array sort pannanum so largest elemnet last la irukum now loop ah last leruthu r
     }
 })
 
+
+
+## code OP
+
+class Solution {
+    public int getSecondLargest(int[] arr) {
+    if(arr.length < 2) return -1;
+    
+    int firstMax=-1;
+    int secondMax=-1;
+    
+    for(int i = 0;i<arr.length;i++){
+        if(arr[i]>firstMax){
+            secondMax = firstMax;
+            firstMax=arr[i];
+        }
+        else if(arr[i]<firstMax && arr[i]>secondMax){
+            secondMax = arr[i];
+        }
+    }return secondMax;
+    }
+}
 
 
 
