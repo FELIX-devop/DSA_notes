@@ -17,7 +17,7 @@ nums = [1,2,3]
 - Last-ah, **break point-ku apram irukkura ella numbers-um reverse** pannum.
 
 ## Notes
-![Next Permutation Steps](StriverSDESheet/source/nextpermutation.png)
+![Next Permutation Steps](source/nextpermutation.png)
 
 ## Code OP
 ```java
