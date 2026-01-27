@@ -24,7 +24,7 @@ Indha moonu problem-kum base approach **NCR formula** dhaan.
 - Row print panna: same row-ku ella column values-um `nCr` use panni calculate pannum  
 - Triangle form panna: 0 to N rows varaikum nested loop-la `nCr` apply pannum  
 
-## Approach
+## Approach op
 oru for loop la 1 2 3 4 nu row va print pannanum.already namma kita row print pandra function iruku just athuku 1 2 3 4 nu value pass pannamatum podhum vara answer ah List of List store panikanum.
 
 ## Code 3 in 1 
