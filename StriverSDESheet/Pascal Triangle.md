@@ -18,13 +18,16 @@ Row, Column values illa N value (problem type-ku depend aagum)
 ## Approach
 Indha moonu problem-kum base approach **NCR formula** dhaan.
  nCr =n!/r! * (n-r)1.
- 
+
 
 - Element find panna: `nCr` use pannum  
 - Row print panna: same row-ku ella column values-um `nCr` use panni calculate pannum  
 - Triangle form panna: 0 to N rows varaikum nested loop-la `nCr` apply pannum  
 
-## Code 1
+## Approach
+oru for loop la 1 2 3 4 nu row va print pannanum.already namma kita row print pandra function iruku just athuku 1 2 3 4 nu value pass pannamatum podhum vara answer ah List of List store panikanum.
+
+## Code 3 in 1 
 ```java
   
 
@@ -67,4 +70,27 @@ public class Main {
          return list;    
     }
 }
+```
+## code op
+```java
+class Solution {
+    public List<List<Integer>> generate(int num) {
+        List<List<Integer>> list = new ArrayList<>();
+        for(int i=0;i<num;i++){
+            list.add(printPascalRow(i+1));
+        }return list;
+    }
     
+    List<Integer> printPascalRow(int n){
+        List<Integer> row=new ArrayList<>();
+        int element=1;
+        row.add(1);
+        for(int i=1;i<n;i++){
+            //nCr formula
+            element=(element*(n-i))/i;
+            row.add(element);
+        }
+        return row;
+    }
+}
+```
