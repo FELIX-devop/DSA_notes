@@ -17,6 +17,8 @@ Row, Column values illa N value (problem type-ku depend aagum)
 
 ## Approach
 Indha moonu problem-kum base approach **NCR formula** dhaan.
+ nCr =n!/r! * (n-r)1.
+ 
 
 - Element find panna: `nCr` use pannum  
 - Row print panna: same row-ku ella column values-um `nCr` use panni calculate pannum  
