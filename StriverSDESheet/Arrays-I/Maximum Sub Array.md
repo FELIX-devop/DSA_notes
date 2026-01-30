@@ -22,7 +22,8 @@ Idhu **brute force approach**.
 
  ## Notes
 
-![kadane's algo steps](StriverSDESheet/source/kadane'sAlgorithm.png)
+![kadane's algo steps](../source/kadane'sAlgorithm.png)
+
 
 
 ## Code
