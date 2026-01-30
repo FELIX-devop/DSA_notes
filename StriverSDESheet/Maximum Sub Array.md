@@ -21,7 +21,8 @@ Idhu **brute force approach**.
  Kadane's algo
 
  ## Notes
-![Kadane's algo steps](source/kadane's algorithm.png)
+
+![kadane's algo steps](source/kadane'sAlgorithm.png)
 
 
 ## Code
