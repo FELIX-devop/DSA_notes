@@ -58,3 +58,44 @@ class Solution {
         return max;
     }
 }
+```
+## code for print the maximum subarray
+```java
+class Solution {
+    public int maxSubArray(int[] arr) {
+
+        int max = Integer.MIN_VALUE;
+        int sum = 0;
+
+        int start = 0;
+        int ansStart = 0, ansEnd = 0;
+
+        for(int i = 0; i < arr.length; i++){
+
+            if(sum == 0){
+                start = i;   // new subarray start
+            }
+
+            sum += arr[i];
+
+            if(sum > max){
+                max = sum;
+                ansStart = start;
+                ansEnd = i;
+            }
+
+            if(sum < 0){
+                sum = 0;
+            }
+        }
+
+        // 🔥 print the subarray
+        System.out.print("Subarray: ");
+        for(int i = ansStart; i <= ansEnd; i++){
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+
+        return max;
+    }
+}
